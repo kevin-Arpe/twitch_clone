@@ -95,4 +95,51 @@ header .user-notification li a img {
     width: 250px;
     height: 100vh;
     z-index: -1;
+    padding: 0.6rem;
+}
+
+.container aside .ch-following {
+    margin-bottom: 1rem;
+}
+
+.container aside .title,
+.container aside .ch-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.container aside .title {
+    font-size: 0.8rem;
+}
+
+.container aside .info,
+.container aside .ch-online {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.container aside .list {
+    list-style: none;
+    padding: 0;
+}
+
+.container aside .list li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.container aside .list li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.container aside .list li .ch-online {
+    margin-left: auto;
+}
+
+.container aside .more {
+    font-size: 0.7rem;
+    color: var(--point-color);
 }
