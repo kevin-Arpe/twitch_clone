@@ -1,0 +1,98 @@
+:root {
+    --point-color: #9933cc;
+    --gray: #eee;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    padding: 0.8rem;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .navi{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav .navi li {
+    margin-left: 1rem;
+}
+
+header nav .navi li:last-child {
+    margin-top: 3px;
+}
+
+header nav .navi li a {
+    text-decoration: none;
+    color: black;
+}
+
+header .searchBox {
+    display: flex;
+    align-items: center;
+}
+
+header .searchBox .searchBar {
+    height: 2rem;
+    width: 300px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    border: none;
+}
+
+header .searchBox img {
+    margin-left: 0.6rem;
+    width: 20px;
+    height: 20px;
+}
+
+header .searchBox .searchBar::placeholder {
+    padding-left: 1rem;
+}
+
+header .searchBox .searchBar:focus {
+    outline-style: none;
+    background-color: white;
+    border: 1.2px solid var(--point-color);
+}
+
+header .user-notification {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+header .user-notification li {
+    margin-right: 1.5rem;
+}
+
+header .user-notification li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.container aside {
+    background-color: var(--gray);
+    width: 250px;
+    height: 100vh;
+    z-index: -1;
+}
