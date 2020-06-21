@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Twitch clone site</title>
 </head>
@@ -39,39 +39,47 @@
                 <span class="title">팔로우 중인 채널</span>
                 <ul class="list">
                     <li>
-                        <img src="items/miyo.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">미요님 (hi_meyo)</div>
-                            <div class="info">새 동영상 6개</div>
+                        <div class="list-card">
+                            <img src="items/miyo.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">미요님 (hi_meyo)</div>
+                                <div class="info">새 동영상 6개</div>
+                            </div>
+                            <div class="ch-online">오프라인</div>
                         </div>
-                        <div class="ch-online">오프라인</div>
-                    </a></li>
-
-                    <li>
-                        <img src="items/wow.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">WorldofWarships</div>
-                            <div class="info">새 동영상 4개</div>
-                        </div>
-                        <div class="ch-online">오프라인</div>
                     </li>
 
                     <li>
-                        <img src="items/black.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">흑운장 (firebather)</div>
-                            <div class="info">새 동영상 2개</div>
+                        <div class="list-card">
+                            <img src="items/wow.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">WorldofWarships</div>
+                                <div class="info">새 동영상 4개</div>
+                            </div>
+                            <div class="ch-online">오프라인</div>
                         </div>
-                        <div class="ch-online">오프라인</div>
                     </li>
 
                     <li>
-                        <img src="items/sc.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">Starcraft</div>
-                            <div class="info">새 동영상 4개</div>
+                        <div class="list-card">
+                            <img src="items/black.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">흑운장 (firebather)</div>
+                                <div class="info">새 동영상 2개</div>
+                            </div>
+                            <div class="ch-online">오프라인</div>
                         </div>
-                        <div class="ch-online">오프라인</div>
+                    </li>
+
+                    <li>
+                        <div class="list-card">
+                            <img src="items/sc.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">Starcraft</div>
+                                <div class="info">새 동영상 4개</div>
+                            </div>
+                            <div class="ch-online">오프라인</div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -79,37 +87,137 @@
                 <div class="title">추천 채널</div>
                 <ul class="list">
                     <li>
-                        <img src="items/reba.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">갱생레바 (mister92)</div>
-                            <div class="info">The Last of Us Part2</div>
+                        <div class="list-card">
+                            <img src="items/reba.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">갱생레바 (mister_903)</div>
+                                <div class="info">The Last of Us Part2</div>
+                            </div>
+                            <div class="ch-online">
+                                <span class="dot"></span>
+                                <span>3317</span>
+                            </div>
                         </div>
-                        <div class="ch-online">3317</div>
-                    </a></li>
-
-                    <li>
-                        <img src="items/danzi.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">_단즈 (danz_59</div>
-                            <div class="info">Just Chatting</div>
-                        </div>
-                        <div class="ch-online">383</div>
                     </li>
 
                     <li>
-                        <img src="items/someone.png" alt="ch-img">
-                        <div class="ch-card">
-                            <div class="ch-name">별_하리 (star_hari)</div>
-                            <div class="info">Just Chatting</div>
+                        <div class="list-card">
+                            <img src="items/danzi.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">_단즈 (danz_59)</div>
+                                <div class="info">Just Chatting</div>
+                            </div>
+                            <div class="ch-online">
+                                <span class="dot"></span>
+                                <span>383</span>
+                            </div>
                         </div>
-                        <div class="ch-online">97</div>
+                    </li>
+
+                    <li>
+                        <div class="list-card">
+                            <img src="items/someone.png" alt="ch-img">
+                            <div class="ch-card">
+                                <div class="ch-name">별_하리 (star_hari)</div>
+                                <div class="info">Just Chatting</div>
+                            </div>
+                            <div class="ch-online">
+                                <span class="dot"></span>
+                                <span>97</span>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
             <span class="more">더 보기</span>
+            <div class="add-ch">
+                <img src="items/search.png" alt="search">
+                <input type="text" placeholder="추가할 친구 검색">
+            </div>
         </aside>
         <main>
-            
+            <div class="recommand-live">
+                <div class="title">취향 저격 생방송 채널</div>
+                <div class="video-list">
+                    <div class="video-card">
+                        <div class="video-info">
+                            <div class="img">
+                                <img src="" alt="thumbnail">
+                            </div>
+                            <div class="ch-info">
+                                <img src="" alt="ch-img">
+                                <div class="info-detail">
+                                    <span class="title">과몰입</span>
+                                    <span class="ch-name">미요님 (hi_meyo)</span>
+                                    <span class="ch-sub">Just Chatting</span>
+                                    <div class="related">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-info">
+                            <div class="img">
+                                <img src="" alt="thumbnail">
+                            </div>
+                            <div class="ch-info">
+                                <img src="" alt="ch-img">
+                                <div class="info-detail">
+                                    <span class="title">[2020 우리은행] LCK Summer</span>
+                                    <span class="ch-name">LCK_Korea</span>
+                                    <span class="ch-sub">League of Legends</span>
+                                    <div class="related">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-info">
+                            <div class="img">
+                                <img src="" alt="thumbnail">
+                            </div>
+                            <div class="ch-info">
+                                <img src="" alt="ch-img">
+                                <div class="info-detail">
+                                    <span class="title">이거 좀 한번 먹어봐</span>
+                                    <span class="ch-name">갱생레바 (mister_903)</span>
+                                    <span class="ch-sub">The Last of Us Part2</span>
+                                    <div class="related">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-info">
+                            <div class="img">
+                                <img src="" alt="thumbnail">
+                            </div>
+                            <div class="ch-info">
+                                <img src="" alt="ch-img">
+                                <div class="info-detail">
+                                    <span class="title">Haha Vandal go Brrrrrr</span>
+                                    <span class="ch-name">michaelreeves</span>
+                                    <span class="ch-sub">VALORANT</span>
+                                    <div class="related">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recommand-category"></div>
+            <div class="recommand-sub"></div>
         </main>
     </div>
 </body>
