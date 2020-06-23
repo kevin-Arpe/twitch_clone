@@ -294,7 +294,7 @@ main .recommand-live .video-list {
     text-align: center;
     color: var(--point-color);
     font-size: 0.8rem;
-    font-weight: 600;
+    fonts-weight: 600;
 }
 
 .video-list .more .more-content i {
