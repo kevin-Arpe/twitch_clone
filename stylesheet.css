@@ -276,10 +276,49 @@ main .recommand-live .video-list {
     overflow: hidden;
     position: relative;
     padding: 1px;
+    height: 300px;
+}
+
+.video-list .more {
+    position: absolute;
+    display: flex;
+    bottom: 2px;
+    width: 100%;
+}
+
+.video-list .more .more-content {
+    width: 5%;
+}
+
+.video-list .more .more-content {
+    text-align: center;
+    color: var(--point-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.video-list .more .more-content i {
+    margin-left: 0.4rem;
+}
+
+
+.video-list .more span {
+    width: 5%;
+    text-align: center;
+    color: var(--point-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.video-list .more .hori-line {
+    margin: auto;
+    width: 45%;
+    border-bottom: 1px solid #ddd;
 }
 
 .video-list .video-card {
-    width: 25%;
+    width: 300px;
     margin: 4px 6px !important;
 }
 
@@ -290,18 +329,42 @@ main .recommand-live .video-list {
 .video-list .video-card .video-info .img {
     background-color: var(--gray);
     width: 100%;
-    min-width: 300px;
-    height: 160px;
+    height: 180px;
 }
 
-.ch-info .info-detail {
+.video-info .info {
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin-top: 0.6rem;
 }
 
-.ch-info .info-detail .title,
-.ch-info .info-detail .ch-name,
-.ch-info .info-detail .ch-sub {
+.video-info .info img {
+    width: 10%;
+}
+
+.video-info .info .detail {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 0.6rem;
+}
+
+.detail .title,
+.detail .ch-name,
+.detail .ch-sub {
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.video-info .info .ch-name,
+.video-info .info .ch-sub {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.video-info .info i {
+    position: relative;
+    top: 4px;
 }
