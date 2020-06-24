@@ -17,6 +17,8 @@ header {
     padding: 0.8rem;
     box-shadow: 0 2px rgba(0, 0, 0, 0.1);
     position: fixed;
+    z-index: 1;
+    background-color: #fff;
 }
 
 header nav {
@@ -129,7 +131,7 @@ a:hover .tooltip .tooltip-text {
 
 .container aside {
     background-color: var(--gray);
-    width: 230px;
+    width: 15%;
     height: 100%;
     z-index: -1;
     padding: 0.6rem 0;
@@ -252,20 +254,22 @@ a:hover .tooltip .tooltip-text {
 }
 
 main {
-    margin-left: 230px;
+    margin-left: 15%;
     padding: 1rem;
-    width: 100%;
+    width: 85%;
 }
 
 main .recommand-live {
     width: 100%;
 }
 
-main .recommand-live .title {
+main .recommand-live .title,
+main .recommand-category .title {
     font-weight: 600;
 }
 
-main .recommand-live > .title {
+main .recommand-live > .title,
+main .recommand-category > .title {
     font-size: 1.2rem;
     margin-bottom: 12px;
 }
@@ -276,7 +280,7 @@ main .recommand-live .video-list {
     overflow: hidden;
     position: relative;
     padding: 1px;
-    height: 300px;
+    height: 350px;
 }
 
 .video-list .more {
@@ -336,18 +340,29 @@ main .recommand-live .video-list {
     overflow: hidden;
     display: flex;
     width: 100%;
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
+    position: relative;
 }
 
-.video-info .info img {
-    width: 10%;
+.video-info .info .thumnail {
+    margin-right: 0.4rem;
+}
+
+.video-info .info .thumnail .img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.video-info .info .thumnail img {
+    display: none;
 }
 
 .video-info .info .detail {
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 0 0.6rem;
+    padding: 0;
 }
 
 .detail .title,
@@ -358,6 +373,22 @@ main .recommand-live .video-list {
     text-overflow: ellipsis;
 }
 
+.detail .related {
+    display: flex;
+    margin-top: 0.4rem;
+}
+
+.detail .related .rel-item {
+    background-color: var(--gray);
+    border-radius: 6px;
+    padding: 1px 0.6rem;
+    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #444;
+    white-space: nowrap;
+}
+
 .video-info .info .ch-name,
 .video-info .info .ch-sub {
     font-size: 0.8rem;
@@ -365,6 +396,41 @@ main .recommand-live .video-list {
 }
 
 .video-info .info i {
-    position: relative;
+    position: absolute;
     top: 4px;
+    right: 2px;
+    font-size: 0.8rem;
+}
+
+main .recommand-category {
+    margin-top: 1rem;
+}
+
+main .recommand-category .title a {
+    color: var(--point-color);
+    text-decoration: none;
+}
+
+main .recommand-category .title a:hover {
+    text-decoration: underline;
+}
+
+.recommand-category .video-list {
+    display: flex;
+}
+
+
+.recommand-category .video-list .video-card {
+    width: 150px;
+    margin: 4px 6px !important;
+}
+
+.recommand-category .video-list .video-card .video-info {
+    width: 100%;
+}
+
+.recommand-category .video-list .video-card .video-info .img {
+    background-color: var(--gray);
+    width: 100%;
+    height: 200px;
 }
