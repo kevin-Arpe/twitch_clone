@@ -1,15 +1,19 @@
 This project make a twitch home page as practice with html, css.
 
-2020 / 06 / 22 TUES
+2020 / 06 / 23 TUES
 Add hover text box for show what the item in the top nav(user-notification) means.
 
 Recommand Video List in Main Tag CSS Styling.
 Make horizontal line with Text using border-bottom.
 
-2020 / 06 / 23 Weds
+2020 / 06 / 24 Weds
 Add twitch channer images in recommand category.
 The images got from twitch web page so, twitch has images licenses.
 
 We has a problem with main tag width, we can't fix it.
 Sidebar width has 15% of window and main width has 85%
 but, total width is over than 100% width of window.
+
+2020 / 06 / 25 Thurs
+Deal with main tag width problem and fixed it.
+Over sized region of video(gray color box element) was the reason of problem.
